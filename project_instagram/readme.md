@@ -9,7 +9,7 @@ Nesse projeto você terá o desafio de reconstruir a página inicial de login do
 ## Requisitos
 
 <p>
-    <span style="border-radius: 3px; background-color: #56ccf2; width: 100px; heigth: 10px; text-align: center; color: #ffffff; padding: 2px 5px;">CSS</span>
-        <span style="border-radius: 3px; background-color: #cb356b; width: 100px; heigth: 10px; text-align: center; color: #ffffff; padding: 2px 5px;">HTML</span>
+    <span>CSS</span>
+    <span>HTML</span>
 </p>
 
