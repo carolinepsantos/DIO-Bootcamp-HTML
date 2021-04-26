@@ -1,0 +1,340 @@
+:root {
+    --vermelho: #E50914;
+    --preto: #141414;
+    --cinza: #AAAAAA;
+    --branco: #FFFFFF;
+    /* classificação indicativa */
+    --livre: #00b14f;
+    /* status séries */
+    --atualizado: rgb(33, 201, 0);
+    --esperando-temporada: rgb(201, 0, 174);
+    --nao-iniciado: rgb(152, 142, 155);
+    --iniciado: rgb(0, 201, 191);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap');
+
+@font-face {
+    font-family: 'Cinzel Decorative';
+    src: url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    transition: all 0.2s ease-in-out;
+}
+
+body {
+    background: var(--preto);
+    color: var(--branco);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans',  sans-serif;
+}
+/* carrossel */
+.carrossel .container {
+    margin-top: 1rem;
+   padding: 0 2rem;
+}
+.carrossel .titulo {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+/* frame */
+.frame {
+    width: 150px;
+    height: 200px;
+}
+.frame:hover {
+   box-shadow: 2px 2px 10px 1px rgba(255, 255, 255, 0.25);
+}
+.frame .adicionar,
+.frame .adicionada {
+    float: right;
+    margin: 0.25rem;
+    padding: 0.3rem 0.5rem;
+    border: 1px solid var(--branco);
+    background: rgba(255, 255, 255, 0.25);
+    color: var(--branco);
+    outline: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.frame .adicionar:hover {
+    border: 2px solid rgb(201, 0, 174);
+    color: rgb(201, 0, 174);
+    background: rgba(201, 0, 174, 0.25);
+}
+.frame .status {
+    position: absolute;
+    top: 192px;
+    width: 150px;
+    height: 8px;
+    background: var(--cinza);
+}
+.frame .status-terminada {
+    background: var(--atualizado);
+}
+.frame .status-esperando-temporada {
+    background: var(--esperando-temporada);
+}
+.frame .status-iniciado {
+    background: var(--iniciado) ;
+}
+.frame .status-nao-iniciado {
+    background: var(--nao-iniciado);
+}
+/* ANCHOR Header */
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: .5rem 1rem;
+}
+/* Logo */
+header .container .logo {
+    color: var(--vermelho);
+    font-family: 'Cinzel Decorative', sans-serif;
+    font-size: 2.5rem;
+}
+/* Barra de Navegação */
+header nav ul .nav-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight:lighter;
+}
+header nav ul .nav-item  span{
+    margin-left: 0.5rem;
+    font-weight: bold;
+}
+header nav ul .nav-item a {
+    margin-left: 1rem;
+}
+header nav .foto-perfil {
+    display: block;
+    border-radius: 3px;
+    height: 50px;
+    width: 50px;
+    background: url(../img/profile.png);
+    background-size: cover;
+}
+
+/* ANCHOR Banner Destaque */
+.banner-destaque {
+    display: block;
+    width: 100%;
+    height: 550px;
+    background: url(../img/banner.jpg) no-repeat;
+    background-size: cover;
+}
+.banner-destaque .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0 2rem;
+}
+.banner-destaque .container  .titulo {
+    margin-top: 10%;
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-family: 'Cinzel Decorative';
+}
+.banner-destaque .container .descricao {
+    font-size: 1.2rem;
+    font-weight: lighter;
+    margin-top: 1rem;
+    width: 50%;
+}
+.banner-destaque .container  .cta {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-top: 0.5rem;
+    cursor: pointer;
+}
+.banner-destaque  .classificacao-indicativa {
+    display: flex;
+    float: left;
+    justify-content: flex-end;
+    align-items: center;
+    height: 40px;
+    width: 100%;
+    text-align: center;
+}
+.banner-destaque .classificacao-indicativa  span {
+    width: 40px;
+    height: 40px;
+    padding: 0.5rem 0.8rem;
+    background: var(--livre);
+    border: 1px solid var(--branco);
+    box-shadow: 1px 2px 5px 2px rgba(0, 0, 0, 0.1);
+    color: var(--branco);
+}
+.banner-destaque .classificacao-indicativa p {
+    display: none;
+}
+.banner-destaque .classificacao-indicativa:hover span {
+    display: none;
+}
+.banner-destaque .classificacao-indicativa:hover p {
+    display: block;
+    width: 150px;
+    height: 40px;
+    padding-top: 0.6rem;
+    color: var(--branco);
+    background: rgba(0, 0, 0, 0.25);
+}
+/* Botões */
+.botoes {
+    margin-top: 1rem;
+}
+.btn {
+    border: none;
+    outline: none;
+    padding: 1rem 4rem;
+    background: rgba(0, 0, 0, 0.5);
+    color: var(--branco);
+    font-size: 1rem;
+    cursor: pointer;
+}
+.btn i {
+    margin-right: 0.5rem;
+}
+.btn:hover {
+    background: var(--branco);
+    color: var(--vermelho);    
+    font-weight: bold;
+}
+
+/* Carrossel Séries */
+/* Sugestões */
+.carrossel-sugestoes .frame-1 {
+    background: url('../img/banners/carousel/nailed-it.jpg');
+    background-size: cover;
+}
+.carrossel-sugestoes .frame-2 {
+    background: url('../img/banners/carousel/queer-eye.jpg');
+    background-size: cover;
+}
+.carrossel-sugestoes .frame-3 {
+    background: url('../img/banners/carousel/blown-away.jpg');
+    background-size: cover;
+}
+.carrossel-sugestoes .frame-4 {
+    background: url('../img/banners/carousel/queer-eye-japan.jfif');
+    background-size: cover;
+}
+.carrossel-sugestoes .frame-5 {
+    background: url('../img/banners/carousel/glow-up.jpg');
+    background-size: cover;
+}
+.carrossel-sugestoes .frame-6 {
+    background: url('../img/banners/carousel/sugar-rush-christmas.jpg');
+    background-size: cover;
+}
+.carrossel-sugestoes .frame-7 {
+    background: url('../img/banners/carousel/zumbo-just-desserts.jpg');
+    background-size: cover;
+}
+.carrossel-sugestoes .frame-8 {
+    background: url('../img/banners/carousel/crazy-delicious.jpg');
+    background-size: cover;
+}
+.carrossel-sugestoes .frame-9 {
+    background: url('../img/banners/carousel/sugar-rush.jpg');
+    background-size: cover;
+}
+.carrossel-sugestoes .frame-10 {
+    background: url('../img/banners/carousel/next-in-fashion.jpeg');
+    background-size: cover;
+}
+/* Minha Lista */
+/* frames */
+.carrossel-minha-lista .frame {
+    width: 150px;
+    height: 200px;
+}
+.carrossel-minha-lista .frame-1 {
+    background: url('../img/banners/carousel/nailed-it.jpg');
+    background-size: cover;
+}
+.carrossel-minha-lista .frame-2 {
+    background: url('../img/banners/carousel/queer-eye.jpg');
+    background-size: cover;
+}
+.carrossel-minha-lista .frame-3 {
+    background: url('../img/banners/carousel/queer-eye-japan.jfif');
+    background-size: cover;
+}
+.carrossel-minha-lista .frame-4 {
+    background: url('../img/banners/carousel/glow-up.jpg');
+    background-size: cover;
+}
+.carrossel-minha-lista .frame-5 {
+    background: url('../img/banners/carousel/sugar-high.jpg');
+    background-size: cover;
+}
+.carrossel-minha-lista .frame-6 {
+    background: url('../img/banners/carousel/sugar-rush-christmas.jpg');
+    background-size: cover;
+}
+.carrossel-minha-lista .frame-7 {
+    background: url('../img/banners/carousel/sugar-rush.jpg');
+    background-size: cover;
+}
+.carrossel-minha-lista .frame-8 {
+    background: url('../img/banners/carousel/next-in-fashion.jpeg');
+    background-size: cover;
+}
+.carrossel-minha-lista .frame-9 {
+    background: url('../img/banners/carousel/nailed-it-mexico.jpg');
+    background-size: cover;
+}
+.carrossel-minha-lista .frame-10 {
+    background: url('../img/banners/carousel/nailed-it-holiday.jpg');
+    background-size: cover;
+}
+/* Nailed It */
+/* frames */
+.carrossel-nailed-it {
+    margin-bottom: 20px;;
+}
+.carrossel-nailed-it .frame {
+    width: 150px;
+    height: 200px;
+}
+.carrossel-nailed-it .frame-1 {
+    background: url('../img/banners/carousel/nailed-it.jpg');
+    background-size: cover;
+}
+.carrossel-nailed-it .frame-2 {
+    background: url('../img/banners/carousel/nailed-it-franca.jpg');
+    background-size: cover;
+}
+.carrossel-nailed-it .frame-3 {
+    background: url('../img/banners/carousel/nailed-it-mexico.jpg');
+    background-size: cover;
+}
+.carrossel-nailed-it .frame-4 {
+    background: url('../img/banners/carousel/nailed-it-germany.jpg');
+    background-size: cover;
+}
+.carrossel-nailed-it .frame-5 {
+    background: url('../img/banners/carousel/nailed-it-spain.jpg');
+    background-size: cover;
+}
+.carrossel-nailed-it .frame-6 {
+    background: url('../img/banners/carousel/nailed-it-brasil.jpg');
+    background-size: cover;
+}
+.carrossel-nailed-it .frame-7 {
+    background: url('../img/banners/carousel/nailed-it-holiday.jpg');
+    background-size: cover;
+}
+.carrossel-nailed-it .frame-8 {
+    background: url('../img/banners/carousel/nailed-it-natal-e-ano-novo.jpg');
+    background-size: cover;
+}

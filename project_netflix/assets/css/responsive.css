@@ -1,0 +1,41 @@
+@media screen and (max-width: 950px) {
+    .banner-destaque {
+        flex-direction: column;
+        height: 550px;
+    }
+   
+}
+@media screen and (max-width: 700px) {
+    .banner-destaque .container {
+        flex-direction: column;
+    }
+    .banner-destaque  .botoes .btn {
+        margin-top: 5px;
+        width: 300px;
+    }
+    .banner-destaque .container .descricao {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 400px) {
+    header nav ul .nav-item p {
+       display: none;
+    }
+    .banner-destaque .container {
+        flex-direction: column;
+    }
+    .banner-destaque .container  .titulo { 
+        font-size: 2rem;
+    }
+    .banner-destaque  .botoes .btn {
+        margin-top: 5px;
+        width: 250px;
+    }
+    .banner-destaque .container .descricao {
+        width: 100%;
+        font-size: 1rem;
+    }
+    .banner-destaque .container .cta {
+        font-size: 1.1rem;
+    } 
+}
