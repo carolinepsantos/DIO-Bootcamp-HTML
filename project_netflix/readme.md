@@ -8,4 +8,4 @@ Nesse projeto o desafio foi de recriar a interface do principal site de streamin
 
 ## Requisitos
 
-![HTML Version](https://img.shields.io/static/v1?label=HTML&message=5&color=blue)![CSS Version](https://img.shields.io/static/v1?label=CSS&message=3&color=purple)
+![HTML Version](https://img.shields.io/static/v1?label=HTML&message=5&color=blue) ![CSS Version](https://img.shields.io/static/v1?label=CSS&message=3&color=purple)
