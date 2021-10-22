@@ -14,4 +14,4 @@ Nesse projeto o desafio foi de recriar o jogo da cobrinha simples utilizando HTM
 
 ## Resultado Final
 
-![Snake Game](https://github.com/carolinepsantos/DIO-Bootcamp-HTML/tree/main/project_snake_game/snake_game.gif)
+![Snake Game](https://imgur.com/a/ozgv8mc)
