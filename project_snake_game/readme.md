@@ -12,7 +12,3 @@ Nesse projeto o desafio foi de recriar o jogo da cobrinha simples utilizando HTM
 ![CSS Version](https://img.shields.io/static/v1?label=CSS&message=3&color=purple) 
 ![JS Version](https://img.shields.io/static/v1?label=JS&message=ES6&color=green) 
 
-## Resultado Final
-
-![Snake Game](https://imgur.com/a/ozgv8mc.gif)
-<img alt="Snake Game" src="https://imgur.com/a/ozgv8mc" width="500"></img>
