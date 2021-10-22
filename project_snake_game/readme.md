@@ -15,3 +15,4 @@ Nesse projeto o desafio foi de recriar o jogo da cobrinha simples utilizando HTM
 ## Resultado Final
 
 ![Snake Game](https://imgur.com/a/ozgv8mc.gif)
+<img alt="Snake Game" src="https://imgur.com/a/ozgv8mc" width="500"></img>
